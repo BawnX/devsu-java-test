@@ -1,0 +1,49 @@
+# Archivos compilados
+*.o
+*.so
+*.exe
+
+# Archivos de respaldo
+*~
+*.bak
+
+# Directorios de salida
+bin/
+obj/
+out/
+
+# Archivos de configuración específicos del entorno
+.env
+.env.*
+
+# Archivos de caché
+__pycache__/
+*.pyc
+
+# Archivos de logs
+*.log
+
+# Directorios de dependencias
+node_modules/
+bower_components/
+vendor/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de editor
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Archivos de construcción
+build/
+dist/
+
+# Archivos de prueba
+coverage/
+.nyc_output/
+
+# Archivos de documentación
+docs/_build/
