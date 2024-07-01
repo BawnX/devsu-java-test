@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "58c19c0c-f54b-4e43-ab49-30923fb3ef00",
+		"name": "Devsu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9231520"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:81/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clientes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:81/clientes/41cd2ed3-28f1-41da-9d60-535e5abf9fe4",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clientes",
+						"41cd2ed3-28f1-41da-9d60-535e5abf9fe4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:81/clientes/81dba1fd-e0a7-4844-988a-228590b89284",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clientes",
+						"81dba1fd-e0a7-4844-988a-228590b89284"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"test\",\r\n    \"Genero\": \"otro\",\r\n    \"Edad\": 32,\r\n    \"Direccion\": \"direccion 123\",\r\n    \"Telefono\": \"1231233\",\r\n    \"Contraseña\": \"clave123\",\r\n    \"Estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:81/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Contraseña\": \"clave12\",\r\n    \"Estado\": false,\r\n    \"PersonaId\": \"52e25b67-4112-45cf-acb4-7283464da767\",\r\n    \"Nombre\": \"test2\",\r\n    \"Genero\": \"mujer\",\r\n    \"Edad\": \"24\",\r\n    \"Direccion\": \"direccion\",\r\n    \"Telefono\": \"9231233\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:81/clientes/81dba1fd-e0a7-4844-988a-228590b89284",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clientes",
+						"81dba1fd-e0a7-4844-988a-228590b89284"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cliente",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Telefono\": \"923123333\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:81/clientes/42fd690b-b134-42fd-96eb-8a814aa9760b",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clientes",
+						"42fd690b-b134-42fd-96eb-8a814aa9760b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:82/cuentas",
+					"host": [
+						"localhost"
+					],
+					"port": "82",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentasByClientId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:82/cuentas/812955a0-cacc-40ac-af19-93a76b45b886",
+					"host": [
+						"localhost"
+					],
+					"port": "82",
+					"path": [
+						"cuentas",
+						"812955a0-cacc-40ac-af19-93a76b45b886"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClienteId\": \"812955a0-cacc-40ac-af19-93a76b45b886\",\r\n    \"BalanceInicial\": 0,\r\n    \"Estado\": true,\r\n    \"TipoCuenta\": \"credito\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuenta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BalanceInicial\": 0,\r\n    \"Estado\": true,\r\n    \"TipoCuenta\": \"credito\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/2349de5d-49e3-4811-9412-382c35ec200c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"2349de5d-49e3-4811-9412-382c35ec200c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuenta",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BalanceInicial\": 0,\r\n    \"Estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/2349de5d-49e3-4811-9412-382c35ec200c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"2349de5d-49e3-4811-9412-382c35ec200c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuenta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BalanceInicial\": 0,\r\n    \"Estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/2349de5d-49e3-4811-9412-382c35ec200c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"2349de5d-49e3-4811-9412-382c35ec200c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movimientos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimiento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movimientos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CuentaId\": \"7a0d0179-8c0b-4c33-82a3-73ab832f00d7\",\r\n    \"TipoMovimiento\": \"deposito\",\r\n    \"Monto\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:82/movimientos",
+					"host": [
+						"localhost"
+					],
+					"port": "82",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reportes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:82/reportes?startDate=01-07-2024&endDate=01-07-2024&cliente=812955a0-cacc-40ac-af19-93a76b45b886",
+					"host": [
+						"localhost"
+					],
+					"port": "82",
+					"path": [
+						"reportes"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "01-07-2024"
+						},
+						{
+							"key": "endDate",
+							"value": "01-07-2024"
+						},
+						{
+							"key": "cliente",
+							"value": "812955a0-cacc-40ac-af19-93a76b45b886"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
